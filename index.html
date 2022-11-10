@@ -67,23 +67,31 @@
     
     <div x-data="{ddopen:false}">
     <dl>
-      <dt>Lorem. </dt>
-      <div class="accordeon1"> 
-        <button aria-controls="sousnav" @click="ddopen =! ddopen">
-        Lorem.</button>
-        <nav id="sousnav" x-show="ddopen"
-        <dd>Lorem ipsum dolor sit amet.</dd>
+      <div class="accordeon1"aria-controls="sousnav" @click="ddopen =! ddopen"><dt>Lorem.</dt>
+        <nav id="sousnav" x-show="ddopen">
+          <dd>Lorem ipsum dolor sit amet.</dd></nav>
       </div>
-        
+    </div>    
     </dl>
+
+    <div x-data="{ddopen2:false}">
     <dl>
-      <dt>Facilis.</dt>
-      <dd>Nemo a ex eligendi odio?</dd>
+      <div class="accordeon2" aria-controls="sousnav" @click="ddopen2 =! ddopen2"><dt>Facilis.</dt>
+        <nav id="sousnav" x-show="ddopen2">
+        <dd>Nemo a ex eligendi odio?</dd>
+        </nav>
+      </div>
+    </div>
     </dl>
+
+    <div x-data="{ddopen3:false}">
     <dl>
-      <dt>Quas?</dt>
+      <div class="accordeon3" aria-controls="sousnav" @click="ddopen3 =! ddopen3"><dt>Quas?</dt> 
+      <nav id="sousnav" x-show="ddopen3">
       <dd>Rem quisquam ut praesentium nam?</dd>
+      </nav>
+    </div>
     </dl>
-  </div>
+    </div>
   </body>
 </html>
