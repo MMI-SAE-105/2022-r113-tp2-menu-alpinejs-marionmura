@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CHat 1</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <header>
         <h1>LE chat 1</h1>
         <nav>
             <h4>menu</h4>
+            <img src="../public/icones/archives.svg" alt="archives">
+            <img src="../public/icones/bag-plus.svg" alt="bag plus">
+            <img src="../public/icones/book.svg" alt="book">
             <ul>
                 <li><a href="../cats/index.html">les chats</a></li>
                 <ul>
@@ -27,11 +31,18 @@
     </header>
     <main>
         <section>
-            <img src="../public/img/cats/cat_yawning_in_park.jpg" alt="le chat qui dort">
+            <div class="media--fullwidth">
+                <img src="../public/img/cats/cat_yawning_in_park.jpg" alt="le chat qui dort">
+            </div>
             <p>Le chat est fatigué, il baille. Il devrait dormir la nuit</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aliquam tempora reiciendis atque porro eos commodi similique sapiente nemo aspernatur asperiores, ullam fuga accusamus quas eius, nobis dicta recusandae labore?</p>
         </section>
-
+        <style>
+            .media--fullwidth {
+                width: 100%;
+                height: auto;
+            }
+        </style>
     </main>
 </body>
 </html>
